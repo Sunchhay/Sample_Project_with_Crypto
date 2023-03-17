@@ -1,8 +1,12 @@
 import {combineReducers} from '@reduxjs/toolkit';
-import {newsReducer} from './reducer';
+import { CategoryReducer } from './category.reducer';
+import { loadingReducer } from './loading.reducer';
+import { NewsReducer } from './news.reducer';
 
 const rootReducers = combineReducers({
-  news: newsReducer,
+  news: NewsReducer,
+  category: CategoryReducer,
+  loading: loadingReducer
 });
 
 export default rootReducers;
